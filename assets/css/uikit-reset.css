@@ -1,0 +1,68 @@
+.uk-overlay-default {
+    background: hsla(var(--PrimaryColor-h), var(--PrimaryColor-s), calc(var(--PrimaryColor-l) + var(--lighten)), calc(var(--PrimaryColor-a) - var(--transparent025)));
+}
+
+.uk-light .uk-button-default,
+.uk-light .uk-button-primary {
+    font-weight: bold;
+}
+
+.uk-light .uk-button-primary,
+.uk-card-primary,
+.uk-background-primary {
+    background-color: hsl(var(--PrimaryColor-h), var(--PrimaryColor-s), calc(var(--PrimaryColor-l) - var(--darken)));
+}
+
+.uk-light .uk-button-primary {
+    color: rgba(255, 255, 255, .5);
+}
+
+.uk-light .uk-button-primary:hover {
+    background-color: var(--PrimaryColor);
+    color: white;
+}
+
+.uk-light .uk-icon-button:hover {
+    background-color: var(--PrimaryColor);
+}
+
+.uk-navbar-dropdown {
+    background: hsl(var(--PrimaryColor-h), var(--PrimaryColor-s), calc(var(--PrimaryColor-l) - var(--darken)));
+    padding: 15px;
+    width: auto;
+}
+
+.uk-navbar-dropdown-nav>li>a:hover,
+.uk-light .uk-navbar-nav>li.uk-active>a,
+.uk-light .uk-navbar-nav>li:hover>a,
+.uk-breadcrumb>*>*:hover,
+.uk-breadcrumb>:last-child>a:not([href]),
+.uk-breadcrumb>:last-child>span {
+    color: hsl(var(--PrimaryColor-h), var(--PrimaryColor-s), calc(var(--PrimaryColor-l) + var(--lighten)));
+}
+
+.uk-breadcrumb>*>* {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.uk-card-primary>:not([class*=uk-card-media]) .uk-badge {
+    background-color: var(--PrimaryColor);
+    color: white !important;
+    padding: 15px 10px;
+}
+
+.uk-light .uk-text-primary {
+    color: hsl(var(--PrimaryColor-h), var(--PrimaryColor-s), calc(var(--PrimaryColor-l) - var(--darken2))) !important;
+}
+
+.uk-heading-line>::after, .uk-heading-line>::before {
+    border-color: hsl(var(--PrimaryColor-h), var(--PrimaryColor-s), calc(var(--PrimaryColor-l) - var(--darken)));
+}
+
+.uk-text-primary {
+    color: var(--PrimaryColor) !important;
+}
+
+.uk-thumbnav>*>::after {
+    background-image: linear-gradient(180deg, hsla(233, 34%, 45%, 0), hsla(233, 34%, 45%, .5));
+}

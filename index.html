@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.19.4/css/uikit.min.css">
+    <!-- <link rel="stylesheet" href="assets/vendor/uikit-3.19.4/css/uikit.min.css"> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/uikit-reset.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.19.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.19.4/js/uikit-icons.min.js"></script>
+    <!-- <script src="assets/vendor/uikit-3.19.4/js/uikit.min.js"></script> -->
+    <!-- <script src="assets/vendor/uikit-3.19.4/js/uikit-icons.min.js"></script> -->
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+</head>
+
+<body>
+    <div class="Header uk-container uk-container-expand uk-light">
+        <div class="uk-child-width-1-3 uk-margin-medium-top" uk-grid>
+            <div>
+                <ul class="uk-subnav" uk-margin>
+                    <li>
+                        <button class="uk-button uk-button-default" type="button"
+                            uk-toggle="target: #modal-example">Магазины</button>
+                    </li>
+                    <li>
+                        <button class="uk-button uk-button-default" type="button"
+                            uk-toggle="target: #modal-example">Склады</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-text-center">
+                <a href="#" class="uk-logo">
+                    <img width="200px" src="assets/images/logo2.png" alt="">
+                </a>
+            </div>
+            <div>
+                <ul class="uk-subnav uk-float-right" uk-margin>
+                    <li>
+                        <a class="uk-icon-button" href uk-search-icon></a>
+                        <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                            <form class="uk-search uk-search-navbar uk-width-1-1">
+                                <input class="uk-search-input" type="search" placeholder="Поиск" autofocus>
+                            </form>
+                        </div>
+                    </li>
+                    <li><a href="" class="uk-icon-button" uk-icon="receiver"></a></li>
+                    <li><a href="" class="uk-icon-button" uk-icon="file-pdf"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="modal-example" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Headline</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <button class="uk-button uk-button-primary" type="button">Save</button>
+                </p>
+            </div>
+        </div>
+        <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="">О компании</a></li>
+                            <li class="uk-active"><a href="">Каталог</a></li>
+                            <li><a href="">Представители</a></li>
+                            <li><a href="">Сотрудничество</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="HomeSlideshow uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+        uk-slideshow="autoplay: true; animation: push">
+        <div class="uk-slideshow-items">
+            <div>
+                <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                    <img src="content/banner.webp" alt="" uk-cover>
+                </div>
+                <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000">
+                </div>
+                <div class="uk-position-bottom-right uk-overlay uk-overlay-default">
+                    <div uk-slideshow-parallax="scale: 1,1,0.8">
+                        <h2 class="uk-heading-small uk-margin-small-bottom" uk-slideshow-parallax="x: 200,0,0">Фиеста
+                        </h2>
+                        <p class="uk-h2 uk-margin-remove" uk-slideshow-parallax="x: 400,0,0;">Модульная система для
+                            спальни</p>
+                        <button class="uk-button uk-button-primary uk-button-small uk-margin-top">Страница
+                            товара</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                    <img src="content/banner2.webp" alt="" uk-cover>
+                </div>
+                <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000">
+                </div>
+                <div class="uk-position-bottom-right uk-overlay uk-overlay-default">
+                    <div uk-slideshow-parallax="scale: 1,1,0.8">
+                        <h2 class="uk-heading-small uk-margin-small-bottom" uk-slideshow-parallax="x: 200,0,0">Дублин
+                        </h2>
+                        <p class="uk-h2 uk-margin-remove" uk-slideshow-parallax="x: 400,0,0;">Угловой диван со столиком
+                        </p>
+                        <button class="uk-button uk-button-primary uk-button-small uk-margin-top">Страница
+                            товара</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+            uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+            uk-slideshow-item="next"></a>
+    </div>
+
+    <section class="uk-section uk-light">
+        <div class="uk-container uk-container-expand">
+            <h2 class="uk-heading-medium uk-heading-line"><span>Категории товаров</span></h2>
+            <div class="uk-card-primary uk-margin-large-top">
+                <div class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
+                    <div>
+                        <div class="uk-cover-container uk-height-1-1">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Категория</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-padding-small">
+                            <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                                <div>
+                                    <img src="content/cat1.webp" alt="">
+                                    <h3 class="uk-h4 uk-margin-small-top">Подкатегория</h3>
+                                </div>
+                                <div>
+                                    <img src="content/cat1.webp" alt="">
+                                    <h3 class="uk-h4 uk-margin-small">Подкатегория</h3>
+                                </div>
+                                <div>
+                                    <img src="content/cat1.webp" alt="">
+                                    <h3 class="uk-h4 uk-margin-small">Подкатегория</h3>
+                                </div>
+                                <div>
+                                    <img src="content/cat1.webp" alt="">
+                                    <h3 class="uk-h4 uk-margin-small">Подкатегория</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-top">
+                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                    <div>
+                        <div class="uk-cover-container uk-height-large">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Гостиные готовые решения</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container uk-height-large">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Гостиные модульные системы</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-top">
+                <div class="uk-child-width-1-4 uk-grid-small" uk-grid>
+                    <div>
+                        <div class="uk-cover-container uk-height-large">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Гостиные готовые решения</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container uk-height-large">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Гостиные модульные системы</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container uk-height-large">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Гостиные модульные системы</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container uk-height-large">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Гостиные модульные системы</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-top">
+                <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                    <div>
+                        <div class="uk-cover-container uk-height-medium">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Диваны прямые</h2>
+                            </div>
+                        </div>
+                        <div class="uk-cover-container uk-height-medium uk-margin-top">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Диваны угловые</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container uk-height-1-1">
+                            <img src="content/cat1.webp" alt="" uk-cover>
+                            <div class="uk-position-top-left uk-overlay uk-overlay-default uk-padding-small">
+                                <h2>Кресла</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="uk-background-default uk-padding-large">
+        <div class="uk-container uk-container-expand">
+            <div uk-grid>
+                <div><a href=""><img width="200px" src="assets/images/logo.png" alt=""></a></div>
+                <div>Принимая во внимание показатели успешности, базовый вектор развития играет определяющее значение
+                    для модели развития. Однозначно, предприниматели в сети интернет разоблачены! Сложно сказать, почему
+                    ключевые особенности структуры проекта неоднозначны и будут своевременно верифицированы.</div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

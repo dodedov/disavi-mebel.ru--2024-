@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+html {
+    --lighten: 14%;
+    --darken: 14%;
+    --darken2: 28%;
+    --transparent025: 0.25;
+
+    --White: hsla(0, 0%, 100%, 1);
+    --White-h: 0;
+    --White-s: 0%;
+    --White-l: 100%;
+    --White-a: 1;
+    --Black: hsla(0, 0%, 0%, 1);
+    --Black-h: 0;
+    --Black-s: 0%;
+    --Black-l: 0%;
+    --Black-a: 1;
+
+    --PrimaryColor: hsla(233, 34%, 45%, 1);
+    --PrimaryColor-h: 226;
+    --PrimaryColor-s: 21%;
+    --PrimaryColor-l: 48%;
+    --PrimaryColor-a: 1;
+
+    --SecondaryColor: hsl(44, 80%, 46%);
+    --SecondaryColor-h: 44;
+    --SecondaryColor-s: 80%;
+    --SecondaryColor-l: 46%;
+
+    background-color: hsl(var(--PrimaryColor-h), var(--PrimaryColor-s), calc(var(--PrimaryColor-l) - var(--darken2)));
+}
+
+.uk-heading-small,
+h2,
+.uk-h2,
+.uk-heading-medium,
+.uk-h4,
+.uk-card-title {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.HomeSlideshow .uk-slideshow-items {
+    height: calc(100vh - 260px);
+}
+
+header .uk-navbar-nav>li>a {
+    min-height: 50px;
+}
+
+.CatNav .uk-navbar-nav>li>a {
+    min-height: 0;
+}
